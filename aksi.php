@@ -1,9 +1,9 @@
 <?php
 session_start();
 //error_reporting(0);
-include "../admin/koneksi.php";
-include "../library.php";
-include "../fungsi_indotgl.php";
+include "admin/koneksi.php";
+include "library/library.php";
+include "library/fungsi_indotgl.php";
 
 $module=$_GET[module];
 $act=$_GET[act];
@@ -38,13 +38,13 @@ if ($module=='keranjang' AND $act=='tambah'){
 				WHERE id_session ='$sid' AND id_produk='$_GET[id]'");		
 	}	
 	deleteAbandonedCart();
-	header('Location:index.php?p=cart');
+	header('Location:index.php?page=cart');
   }				
 }
 
 elseif ($module=='keranjang' AND $act=='hapus'){
 	mysql_query("DELETE FROM orders_temp WHERE id_orders_temp='$_GET[id]'");
-	header('Location:index.php?p=cart');				
+	header('Location:index.php?page=cart');				
 }
 
 elseif ($module=='keranjang' AND $act=='update'){
@@ -57,7 +57,7 @@ elseif ($module=='keranjang' AND $act=='update'){
 	while($r=mysql_fetch_array($sql2)){
 if ($jumlah[$i] > $r['stok_temp']){
 echo "<script>window.alert('Jumlah yang dibeli melebihi stok yang ada');
-window.location=('index.php?p=cart')</script>";
+window.location=('index.php?page=cart')</script>";
 }
 
 elseif($jumlah[$i] == 0){
@@ -68,7 +68,7 @@ window.location=('keranjang-belanja.html')</script>";
 else{
 mysql_query("UPDATE orders_temp SET jumlah = '".$jumlah[$i]."'
 WHERE id_orders_temp = '".$id[$i]."'");
-header('Location:index.php?p=cart');
+header('Location:index.php?page=cart');
     }
   }
   }
