@@ -3,16 +3,16 @@
 						<h2 class="bas-shadow" style="color:#1ab394; "><span class="fa fa-tag"></span> Kategori</h2>
 						<div class="price-range"><!--price-range-->
 							
-							<select class="form-control select2">
-								<option>Filter Kategori</option>
+							<!-- <select class="form-control select2">
+								<option>Filter Kategori</option> -->
 								<?php 
-									$queryKategoriProdukfilter = mysql_query("SELECT * FROM kategori_produk order by katpro_id desc");
-									while ($rowKategorifilter = mysql_fetch_array($queryKategoriProdukfilter)) 
-									{
+									// $queryKategoriProdukfilter = mysql_query("SELECT * FROM kategori_produk order by katpro_id desc");
+									// while ($rowKategorifilter = mysql_fetch_array($queryKategoriProdukfilter)) 
+									// {
 								?>
-								<option value="<?php echo $rowKategorifilter['kat_id']; ?>"><a href="index.php?page=produk_perkategori&id=<?php echo $rowKategorifilter['katpro_id']; ?>" target="_BLANK"><?php echo $rowKategorifilter['kat_nm']; ?></a></option>
-								<?php } ?>
-							</select>
+								<!-- <option value="<?php //echo $rowKategorifilter['kat_id']; ?>"><a href="index.php?page=produk_perkategori&id=<?php// echo $rowKategorifilter['katpro_id']; ?>" target="_BLANK"><?php //echo $rowKategorifilter['kat_nm']; ?></a></option> -->
+								<?php //} ?>
+							<!-- </select> -->
 						</div><!--/price-range-->
 						<div class="panel-group category-products" id="accordian">
 						<div class="panel panel-default">
@@ -32,12 +32,13 @@
 							</div>
 						</div><!--/category-products-->
 						
-						<div class="price-range"><!--price-range-->
+						<!-- <div class="price-range">
 							<h2 class="bas-shadow" style="color: #1ab394;">Price Range</h2>
 							<div class="well text-center dim_about">
 								 <input type="text" class="span2"  value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
 								 <b class="pull-left">Rp.50.000</b> <b class="pull-right">Rp. 1.000.000</b>
 							</div>
-						</div><!--/price-range-->
+						</div> -->
+						<!--/price-range-->
 					</div>
 				</div>

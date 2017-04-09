@@ -1,11 +1,13 @@
 <!-- registrasi member -->
 <?php 
+
 		if (isset($_POST['registrasi'])) {
+			$email  = $_POST['email'];
 			$queryResgitrasi = mysql_query("INSERT INTO kustomer (username,password,nama_lengkap,alamat,email,telpon,propinsi,kabupaten) 
 				VALUES ('".$_POST['username']."',md5('".$_POST['password']."'),'".$_POST['nama_lengkap']."','".$_POST['alamat']."','".$_POST['email']."','".$_POST['telpon']."','".$_POST['propinsi']."','".$_POST['kabupaten']."')");
 			if ($queryResgitrasi) {
-				 echo "<script>alert('Anda Berhasil Registrasi Dan SIlahkan Login'); 
-                location.href='index.php?page=login'</script>";exit;		
+				 echo "<script>alert('Anda Berhasil Registrasi Dan Silahkan Login'); 
+                location.href='SENDEMAIL/sendEmailDebug.php?email=".$email."'</script>";exit;		
 			}
 		}
  ?>
