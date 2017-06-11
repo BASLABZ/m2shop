@@ -1,0 +1,13 @@
+.navbar {
+    height: 60px;
+}
+.hero-area {
+    top: -125px;
+    margin-bottom: -125px;
+}
+
+.top-header {
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+}

